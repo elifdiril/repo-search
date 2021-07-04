@@ -1,50 +1,58 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  header {
-    background-color: #375f9d;
-    padding: 30px;
-    text-align: center;
-    font-size: 35px;
-    color: white;
-  }
-  
-  nav {
-    float: left;
-    width: 10%;
-    background: #ffffff;
-    padding: 20px;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  article {
-    float: left;
-    padding: 20px;
-    width: 90%;
-    background-color: #ffffff;
-  }
-  
-  section::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+  box-sizing: border-box;
+}
 
-  .Rectangle-3 {
-    width: 360px;
-    height: 1px;
-    margin: 8px 0 23px;
-    background-color: #c4c4c4;
+header {
+  background-color: #375f9d;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+nav {
+  float: left;
+  width: 15%;
+  background: #ffffff;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 85%;
+  background-color: #ffffff;
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.Rectangle-3 {
+  width: 200px;
+  height: 1px;
+  margin: 8px 0 23px;
+  background-color: #c4c4c4;
+}
+
+.Line-1 {
+  width: 1px;
+  height: 835px;
+  margin: 65px 63px 0 0;
+  transform: rotate(-90deg);
+  background-color: #c4c4c4;
+}
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
   }
-  
-  @media (max-width: 600px) {
-    nav, article {
-      width: 100%;
-      height: auto;
-    }
-  }
+}
